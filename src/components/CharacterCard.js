@@ -1,7 +1,7 @@
 import React from "react";
-import CharacterList from "./CharacterList";
+// import CharacterList from "./CharacterList";
 import {
-  Card, CardText, CardBody,
+  Card, CardText, 
   CardTitle, Col
 } from 'reactstrap';
 
@@ -25,7 +25,7 @@ export default function CharacterCard(props) {
         <Card className="description"  key={props.key} > 
 
         <CardText> <Alert color="success"> {props.name} </Alert>  </CardText> 
-        <CardTitle> <Alert color="warning">{props.location} </Alert> </CardTitle>
+        <CardTitle> <Alert color="warning">{props.gender} </Alert> </CardTitle>
         {/* <CardBody>  <Alert color="info">  {props.image} </Alert> </CardBody> */}
     
         </Card>

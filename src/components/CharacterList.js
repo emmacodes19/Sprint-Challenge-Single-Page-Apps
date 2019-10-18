@@ -38,13 +38,13 @@ export default function CharacterList() {
          
           key={item.id}
           name={item.name}
-          image={item.image}
-          location={item.location}
+          image={item.url}
+          gender={item.gender}
          
 
           />
 
-          </Row>
+           </Row>
           </Container>
   
 
