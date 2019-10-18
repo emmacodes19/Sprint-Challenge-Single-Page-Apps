@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import CharacterCard from './CharacterCard';
+import { Container, Row} from 'reactstrap';
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -28,12 +29,23 @@ export default function CharacterList() {
       {characters.map((item) => {
         return (
 
-          <CharacterCard
+          <Container>
+
+            <Row>
+
+              <CharacterCard
+            
+         
           key={item.id}
           name={item.name}
           image={item.image}
+          location={item.location}
+         
 
           />
+
+          </Row>
+          </Container>
   
 
         )
